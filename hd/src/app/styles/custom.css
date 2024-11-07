@@ -1,0 +1,20 @@
+/* CustomStyles.css */
+.dropdown-menu.show{
+    background-color: #001969 !important; 
+  }
+  .custom-dropdown {
+      background-color: #001969 !important; /* Aplique a cor desejada */
+    }
+    
+    .custom-dropdown .dropdown-item {
+      color: white; /* Cor do texto dos itens do dropdown */
+    }
+  
+    .custom-dropdown .dropdown-item:hover {
+      background-color: #003366; /* Cor ao passar o mouse */
+    }
+
+
+
+  
+    

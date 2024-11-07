@@ -1,0 +1,51 @@
+@media (max-width: 774px) {
+  table {
+    display: block; /* Torna a tabela um bloco para controle melhorado */
+    width: 100%;
+  }
+
+  thead {
+    display: block; /* Faz o cabeçalho (thead) se comportar como bloco */
+    width: 100%;
+  }
+
+  /* Faz os dados ficarem em uma coluna (formato de lista) */
+  tbody {
+    display: block;
+    width: 100%;
+  }
+
+  tr {
+    display: flex;
+    flex-direction: column; /* Empilha as colunas na vertical */
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  td {
+    display: block;
+    width: 100%;
+    text-align: left; /* Alinha o texto à esquerda */
+    padding: 8px;
+    position: relative; /* Necessário para mostrar os labels no modo responsivo */
+  }
+
+  th {
+    display: block; /* Faz o título da coluna ser exibido corretamente */
+    text-align: left;
+  }
+
+  td::before {
+    content: attr(data-label); /* Exibe o nome da coluna como título em cada linha */
+    font-weight: bold;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background-color: #fff;
+    padding-right: 10px;
+    z-index: 1;
+  }
+}
+
